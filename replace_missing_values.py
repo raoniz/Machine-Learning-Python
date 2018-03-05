@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt  # plot nice charts
 import pandas as pd  # import and manage data sets
 
 datasets = pd.read_csv('Data.csv')
-X = datasets.iloc[:,
-    :-1].values  #: means select all rows, :-1 means select all but last column ie dont take last column
+X = datasets.iloc[:,:-1].values  #: means select all rows, :-1 means select all but last column ie dont take last column
 # X is independent variable matrix of features
 y = datasets.iloc[:, 3].values
 # y is dependent variable vector matrix
