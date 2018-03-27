@@ -43,5 +43,5 @@ from sklearn.preprocessing import StandardScaler
 scale_X = StandardScaler()
 X_train = scale_X.fit_transform(X_train)
 # train set needs to be fit and transformed
-# data set needs only to be transformed
+# test set needs only to be transformed
 X_test = scale_X.transform(X_test)
