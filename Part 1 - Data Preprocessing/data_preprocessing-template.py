@@ -25,9 +25,6 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, y, test_size=0.2, random_
 # train set needs to be fit and transformed
 # data set needs only to be transformed
 #X_test = scale_X.transform(X_test)
-#scale_y = StandardScaler()
-#y_train = scale_y.fit_transform(y_train)
-
 
 # taking care of missing data and encoding categorical data is excluded
 # missing data to be solved ad hoc
