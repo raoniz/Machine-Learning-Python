@@ -37,4 +37,4 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, y, test_size=0.2, random_
 # taking care of missing data and encoding categorical data is excluded
 # missing data to be solved ad hoc
 # encoding categorical data is rarely there but sometimes if they occur we have to encode them
-# feature scaling is commented because generally libraries autometically do it
+# feature scaling is commented because generally libraries automatically do it
