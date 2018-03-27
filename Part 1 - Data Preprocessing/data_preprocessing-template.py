@@ -33,6 +33,8 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, y, test_size=0.2, random_
 # but when y takes a range of values then y needs to feature scaled
 # train set needs to be fit and transformed
 # test set needs only to be transformed
+# dummy variables generally need not feature scaled as they will lose their meaning but better prediction, but they are in
+# same range so no feature scaling required
 
 # taking care of missing data and encoding categorical data is excluded
 # missing data to be solved ad hoc
