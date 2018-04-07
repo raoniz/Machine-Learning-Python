@@ -20,8 +20,9 @@ y = dataset.iloc[:, 4].values
 # categorical data is converted into dummy variable ie state is converted into 2 columns ny, california
 # in regression model we will take either ny or cali as 0,1 and when only 1 dummy variable taken into eqn
 # as the other is assumed as default when the dmummy var is 0, and the coeff is adjusted in the const
-# if 100 variable then only select 99 of them, several independent variables predict each other = multicollinearity
+# if 100 variable in a particaular dummy set then only select 99 of them, several independent variables predict each other = multicollinearity
 # b0 + ... + b4 * D1, b5 * D2 not included; b0,b4*D1,b5*D2 should not be together
+# if there are 2 dummy sets then the rule of removing 1 dummy variable is applied to each set
 
 # Encoding categorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
